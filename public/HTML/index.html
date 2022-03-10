@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/output.css">
+	<title>Test</title>
+</head>
+
+<body class="bg-secondary main-font">
+	<div class="flex justify-center p-20 bg-primary">
+		<h1 class="text-5xl text-second">Calculator</h1>
+	</div>
+	<div class="flex justify-center items-center">
+		<form class="p-20">
+			<input class="rounded font-light outline-none w-32 h-9 bg-input text-center m-1 appearance-none"
+				type="number" id="num1">
+			<input type="text" class="w-7 h-9 rounded font-light outline-none bg-input text-center m-1" id="sign">
+			<input class="rounded font-light outline-none w-32 h-9 bg-input text-center m-1" type="number" id="num2">
+			<div class="flex justify-center m-5">
+				<button class="rounded bg-button text-second p-2 btn outline-none" id="reset">Reset</button>
+			</div>
+		</form>
+	</div>
+	<div class="flex justify-center p-5 items-center">
+		<button class="rounded p-3 outline-none bg-button text-second btn font-medium" id="submit">Submit</button>
+	</div>
+	<div class="flex text-6xl justify-center bg-primary w-screen h-screen text-second font-bold" id="output">
+	</div>
+</body>
+<script src="../App.js"></script>
+
+</html>
