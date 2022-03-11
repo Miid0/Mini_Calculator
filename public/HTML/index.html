@@ -11,11 +11,17 @@
 
 <body class="bg-secondary main-font">
 	<div class="flex justify-center p-20 bg-primary items-center">
-		<h1 class="text-5xl text-second">Calculator</h1>
+		<h1 class="text-5xl text-button_text">Calculator</h1>
 	</div>
 	<div class="flex justify-center">
+		<div class="flex items-center">
+			<button
+				class="text-center rounded bg-gray-400 text-button hover:text-button_text hover:bg-red-600 transition-all duration-200 p-1.5 outline-none"
+				id="reset">Reset</button>
+		</div>
 		<form class="flex justify-center items-center">
-			<input class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1 appearance-none"
+			<input
+				class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1 appearance-none overflow-hidden"
 				type="number" id="num1">
 			<select name="sign" id="sign"
 				class="rounded font-normal outline-none p-1.5 bg-gray-200 text-center appearance-none text-button">
@@ -27,16 +33,13 @@
 			<input class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1" type="number"
 				id="num2">
 			<span class="m-2 text-button text-2xl">&equals;</span>
-			<div class="text-second font-bold p-6" id="output">
+			<div class="text-button_text font-bold p-6" id="output">
 				<p class="text-button text-center text-4xl" id="zero">0</p>
 			</div>
 		</form>
 	</div>
-	<div class="flex justify-center mb-5">
-		<button class="rounded bg-button text-second p-2 btn outline-none" id="reset">Reset</button>
-	</div>
-	<div class="flex justify-center p-5 items-center">
-		<button class="rounded p-3 outline-none bg-button text-second btn font-medium" id="submit">Submit</button>
+	<div class="flex justify-center items-center">
+		<button class="rounded p-3 outline-none bg-button text-button_text btn font-medium" id="submit">Submit</button>
 	</div>
 </body>
 <script src="../App.js"></script>

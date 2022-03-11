@@ -478,10 +478,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.5rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
 .flex{
   display: flex;
 }
@@ -508,6 +504,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -522,19 +522,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(64 110 142 / var(--tw-bg-opacity));
 }
 
-.bg-button{
+.bg-gray-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(22 25 37 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-button{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 25 37 / var(--tw-bg-opacity));
 }
 
 .p-20{
@@ -551,14 +551,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .p-3{
@@ -584,10 +576,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.font-light{
-  font-weight: 300;
-}
-
 .font-normal{
   font-weight: 400;
 }
@@ -600,7 +588,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.text-second{
+.text-button_text{
   --tw-text-opacity: 1;
   color: rgb(203 247 237 / var(--tw-text-opacity));
 }
@@ -613,6 +601,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .main-font {
@@ -628,12 +626,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .btn:hover{
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 247 237 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(22 25 37 / var(--tw-text-opacity));
 }
 
 .error{
   outline-color: #dc2626;
+}
+
+.hover\:bg-red-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.hover\:text-button_text:hover{
+  --tw-text-opacity: 1;
+  color: rgb(203 247 237 / var(--tw-text-opacity));
 }
