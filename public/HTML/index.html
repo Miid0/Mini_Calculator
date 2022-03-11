@@ -10,24 +10,33 @@
 </head>
 
 <body class="bg-secondary main-font">
-	<div class="flex justify-center p-20 bg-primary">
+	<div class="flex justify-center p-20 bg-primary items-center">
 		<h1 class="text-5xl text-second">Calculator</h1>
 	</div>
-	<div class="flex justify-center items-center">
-		<form class="p-20">
-			<input class="rounded font-light outline-none w-32 h-9 bg-input text-center m-1 appearance-none"
+	<div class="flex justify-center">
+		<form class="flex justify-center items-center">
+			<input class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1 appearance-none"
 				type="number" id="num1">
-			<input type="text" class="w-7 h-9 rounded font-light outline-none bg-input text-center m-1" id="sign">
-			<input class="rounded font-light outline-none w-32 h-9 bg-input text-center m-1" type="number" id="num2">
-			<div class="flex justify-center m-5">
-				<button class="rounded bg-button text-second p-2 btn outline-none" id="reset">Reset</button>
+			<select name="sign" id="sign"
+				class="rounded font-normal outline-none p-1.5 bg-gray-200 text-center appearance-none text-button">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="x">x</option>
+				<option value="/">/</option>
+			</select>
+			<input class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1" type="number"
+				id="num2">
+			<span class="m-2 text-button text-2xl">&equals;</span>
+			<div class="text-second font-bold p-6" id="output">
+				<p class="text-button text-center text-4xl" id="zero">0</p>
 			</div>
 		</form>
 	</div>
+	<div class="flex justify-center mb-5">
+		<button class="rounded bg-button text-second p-2 btn outline-none" id="reset">Reset</button>
+	</div>
 	<div class="flex justify-center p-5 items-center">
 		<button class="rounded p-3 outline-none bg-button text-second btn font-medium" id="submit">Submit</button>
-	</div>
-	<div class="flex text-6xl justify-center bg-primary w-screen h-screen text-second font-bold" id="output">
 	</div>
 </body>
 <script src="../App.js"></script>

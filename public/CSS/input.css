@@ -13,5 +13,5 @@
 }
 
 .error {
-	@apply outline-error;
+	@apply outline-red-600;
 }
