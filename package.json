@@ -5,7 +5,7 @@
   },
   "scripts": {
     "build-css": "npx tailwindcss build ./public/CSS/input.css -o ./public/CSS/output.css --watch",
-    "build": "tsc -w"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
