@@ -26,7 +26,6 @@ button?.addEventListener('click', e => {
 	let numOne = parseInt(inputOne.value);
 	let numTwo = parseInt(inputTwo.value);
 	let result: number;
-	console.log(zero.textContent)
 	if (remain) {
 		clearFields();
 		inputOne.value = `${remain}`
