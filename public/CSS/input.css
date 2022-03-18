@@ -9,7 +9,7 @@
 }
 
 .btn {
-	@apply hover:rounded-lg ease-out transition-all duration-300;
+	@apply hover:bg-button_text hover:text-button ease-in-out transition duration-300;
 }
 
 .error {

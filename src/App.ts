@@ -23,8 +23,8 @@ reset?.addEventListener('click', e => {
 })
 
 button?.addEventListener('click', e => {
-	let numOne = parseInt(inputOne.value);
-	let numTwo = parseInt(inputTwo.value);
+	let numOne = parseFloat(inputOne.value);
+	let numTwo = parseFloat(inputTwo.value);
 	let result: number;
 	if (remain) {
 		clearFields();

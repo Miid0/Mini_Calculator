@@ -4,8 +4,8 @@
     "typescript": "^4.6.2"
   },
   "scripts": {
-    "build-css": "npx tailwindcss build ./public/CSS/input.css -o ./public/CSS/output.css",
-    "build": "tsc"
+    "build-css": "npx tailwindcss build ./public/CSS/input.css -o ./public/CSS/output.css -w",
+    "build": "tsc -w"
   },
   "keywords": [],
   "author": "",

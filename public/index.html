@@ -9,19 +9,25 @@
 	<title>Test</title>
 </head>
 
-<body class="bg-secondary main-font">
-	<div class="flex justify-center p-20 bg-primary items-center">
+<body class="bg-primary main-font h-screen flex flex-col justify-start items-center">
+	<div class="p-20 relative">
+		<svg xmlns="http://www.w3.org/2000/svg"
+			class="h-14 w-12 absolute fill-button_text right-10 rotate-12 bottom-18 opacity-75" viewBox="0 0 20 22">
+			<path fill-rule="evenodd"
+				d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 1a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm4-4a1 1 0 100 2h.01a1 1 0 100-2H13zM9 9a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zM7 8a1 1 0 000 2h.01a1 1 0 000-2H7z"
+				clip-rule="evenodd" />
+		</svg>
 		<h1 class="text-5xl text-button_text">Calculator</h1>
 	</div>
-	<div class="flex justify-center">
-		<div class="flex items-center">
-			<button
-				class="text-center rounded bg-gray-400 text-button hover:text-button_text hover:bg-red-600 transition-all duration-200 p-1.5 outline-none"
-				id="reset">Reset</button>
-		</div>
-		<form class="flex justify-center items-center">
+	<div class="flex flex-col justify-center bg-secondary h-72 rounded-2xl">
+		<form class="flex justify-center items-center px-6 max-w-xl">
+			<div class="flex px-1">
+				<button
+					class="text-center rounded bg-gray-400 text-button hover:text-button_text hover:bg-red-600 transition-all duration-200 p-1.5 outline-none"
+					id="reset">Reset</button>
+			</div>
 			<input
-				class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1 appearance-none overflow-hidden"
+				class="rounded font-normal outline-none w-28 h-9 bg-gray-200 text-center m-1 appearance-none overflow-hidden"
 				type="number" id="num1">
 			<select name="sign" id="sign"
 				class="rounded font-normal outline-none p-1.5 bg-gray-200 text-center appearance-none text-button">
@@ -30,16 +36,17 @@
 				<option value="x">x</option>
 				<option value="/">/</option>
 			</select>
-			<input class="rounded font-normal outline-none w-32 h-9 bg-gray-200 text-center m-1" type="number"
+			<input class="rounded font-normal outline-none w-28 h-9 bg-gray-200 text-center m-1" type="number"
 				id="num2">
 			<span class="m-2 text-button text-2xl">&equals;</span>
-			<div class="text-button_text font-bold p-6" id="output">
+			<div class="text-button_text font-bold p-5" id="output">
 				<p class="text-button text-center text-4xl" id="zero">0</p>
 			</div>
 		</form>
-	</div>
-	<div class="flex justify-center items-center">
-		<button class="rounded p-3 outline-none bg-button text-button_text btn font-medium" id="submit">Submit</button>
+		<div class="flex justify-center items-center">
+			<button class="rounded-xl p-3 outline-none bg-button text-button_text btn font-medium"
+				id="submit">Submit</button>
+		</div>
 	</div>
 </body>
 <script src="./App.js"></script>
