@@ -13,5 +13,9 @@
 }
 
 .error {
-	@apply outline-red-600;
+	@apply border-2 border-red-600;
+}
+
+.errormsg {
+	@apply text-sm font-semibold text-red-600;
 }

@@ -5,6 +5,7 @@ const sign = <HTMLSelectElement>document.getElementById('sign');
 const output = document.getElementById('output');
 const reset = <HTMLButtonElement>document.getElementById('reset');
 const zero = <HTMLElement>document.getElementById('zero');
+const errormsg = <HTMLElement>document.getElementById('errormsg');
 var remain = 0;
 
 const clearFields = function () {
@@ -46,9 +47,19 @@ button?.addEventListener('click', e => {
 		default:
 			result = 0;
 	}
-	if (result.toString() !== 'NaN') {
+	if (result.toString() !== 'NaN' && result !== Infinity) {
 		output!.firstElementChild!.innerHTML = `${result}`
 		remain = result;
+	}
+	if (result === Infinity) {
+		inputTwo.classList.add('error');
+		errormsg.innerHTML += `
+		<h3 class="errormsg">You Can't dived by 0!</h3>
+		`
+		setTimeout(() => {
+			inputTwo.classList.remove('error');
+			errormsg.innerHTML = ''
+		}, 3000);
 	}
 	e.preventDefault();
 })
